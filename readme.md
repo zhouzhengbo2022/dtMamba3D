@@ -25,23 +25,12 @@ However, existing methods treat mammograms independently or poorly account for t
 ## 📊 Method Summary
 
 <p align="center">
-  <img src="assets/method_overview.png" width="700"/>
+  <img src="imgs/AAAI-Figure1.png" width="700"/>
 </p>
 
-**Figure:** Overall architecture of LongitudinalMamba.  
-The model processes each exam as a spatial feature map, mixes temporal states using Mamba layers, then aggregates for cancer risk prediction.
-
----
-
-## 🧪 Experimental Results
-
-<p align="center">
-  <img src="assets/main_results.png" width="650"/>
-</p>
-
-- Achieves **+X% improvement** over ResNet/ViT baselines  
-- Demonstrates **strong temporal consistency**  
-- Performs well even under imbalanced longitudinal sequence availability
+**Figure:** (a) Illustration of a patient’s sequential imaging data acquired with irregular inter-visit gaps ∆t (e.g., 2008 → 2012
+→ 2015). (b) Different scanning strategies for spatio-temporal feature volumes. (c) The scanning mechanism in the proposed
+method ∆t-Mamba3D: time-aware scan modulated by inter-visit gaps ∆t with learnable multi-scale 3D neighborhood fusion.
 
 ---
 
